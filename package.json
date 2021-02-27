@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon -e js,mjs,ejs,json,css index.js",
     "test": "node test.js",
     "push": "git push heroku main",
     "open": "heroku open"
@@ -18,7 +18,8 @@
   },
   "devDependencies": {
     "got": "^11.3.0",
-    "tape": "^4.7.0"
+    "tape": "^4.7.0",
+    "nodemon": "2.0.7"
   },
   "repository": {
     "type": "git",
