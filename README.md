@@ -1,8 +1,6 @@
-# node-js-getting-started
+# A simple parser for seventyupgrades.com
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
-
-This application supports the [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+[Seventy Upgrades](https://www.seventyupgrades.com/)
 
 ## Running Locally
 
