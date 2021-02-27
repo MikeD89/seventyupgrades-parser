@@ -4,7 +4,13 @@
 <!-- Dolice Sucks jajajaja-->
 
 <head>
-  <%- include ("../partials/header.ejs") %>
+  <title>SeventyUpgrade Parser</title>
+
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -12,19 +18,22 @@
     <div class="container">
       <h2>SeventyUpgrade Parser</h2>
       <br>
-      <input type="text" class="txt" name="inputurl" placeholder="Enter URL or Set Code" />
-      <a type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-download"></span> Parse</a>
+      <input type="text" class="txt" id="inputBox" placeholder="Enter URL or Set Code" />
+      <a id="submitButton" type="button" class="btn btn-lg btn-primary"><span
+          class="glyphicon glyphicon-download"></span>
+        Parse</a>
     </div>
   </div>
 
   <div class="container">
-    <textarea type="text" class="output" name="outputBox" placeholder="Resulting Commands"></textarea>
+    <textarea type="text" class="output" id="outputBox" placeholder="Resulting Commands"></textarea>
     <hr>
     <div class="row">
       <div class="col-md-6">
         <h3><span class="glyphicon glyphicon-info-sign"></span> Useful Commands</h3>
         <ul>
-          <li>.level 69</li>
+          <li>.level +69</li>
+          <li>.maxskill</li>
           <li>.mod money add 10000000000</li>
           <li>.tele shattrath</li>
           <li>.account create user pass</li>
@@ -46,6 +55,7 @@
     </div>
   </div>
 
+  <script src="./actions.js"></script>
 
 </body>
 
